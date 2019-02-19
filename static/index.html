@@ -264,6 +264,21 @@
 
 <!--  End of footer -->
 
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("Geolocation is not supported in your browser");
+      }
+    }
+
+    function showPosition(position) {
+      console.log(position.coords);
+    }
+    
+    getLocation();
+  </script>
 
 
 
