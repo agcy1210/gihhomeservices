@@ -16,6 +16,16 @@ Primary style
   content: '';
 }
 
+a{
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+a:hover{
+  text-decoration: none;
+}
+
+
 body {
   font-size: 100%;
   font-family: "Varela Round", sans-serif;

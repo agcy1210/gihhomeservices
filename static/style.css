@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 * {
-	font-family: "Varela Round", sans-serif;
+    font-family: "Varela Round", sans-serif;
 }
 
 body {
@@ -525,6 +525,7 @@ ul li {
 
 
 
+
 /*########################################
 ##########################################
 ##########################################*/
@@ -599,10 +600,19 @@ ul li {
     box-shadow: none;
 }
 
+@media screen and (max-width: 776px){
+    .my-search_filter{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 27px;
+    }
+}
+
 .margin-left {
     margin-left: -40px;
 }
-
 /*  Profile Page CSS  */
 
 
@@ -672,3 +682,4 @@ ul li {
 .profile-footer {
     text-align: center;
 }
+`
