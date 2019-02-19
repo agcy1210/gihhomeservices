@@ -605,8 +605,9 @@ ul li {
         display: flex;
         flex-direction:column;
         justify-content: center;
-        align-items: center;
-        margin-right: 27px;
+    }
+    .my-search_filter .form-group {
+        width: 100%;
     }
 }
 
@@ -682,4 +683,3 @@ ul li {
 .profile-footer {
     text-align: center;
 }
-`
