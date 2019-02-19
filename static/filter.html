@@ -57,37 +57,35 @@
 
     <div class="my-search_filter">
         <div class="form-group">
-            <select class="form-control" id="sel1">
-              <option>Ahmedabad</option>
-              <option>Surat</option>
-              <option>Vadodara</option>
-              <option>Nikol</option>
+            <select onchange="configureDDL2(this, document.getElementById('ddl2'));" class="form-control" id="ddl1">
+              <option value="">Select City</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Baroda">Baroda</option>
+              <option value="Mumbai">Mumbai</option>
             </select>
           </div>
 
         <div class="form-group">
-            <select class="form-control" id="sel2">
-              <option>Ahmedabad</option>
-              <option>Surat</option>
-              <option>Vadodara</option>
-              <option>Nikol</option>
+            <select class="form-control" id="ddl2">
+              <option value="">Select Area</option>
             </select>
           </div>
 
           <div class="form-group">
               <select class="form-control" id="sel3">
-                <option>Painter</option>
-                <option>Massage</option>
-                <option>Carpainter</option>
-                <option>Plumber</option>
+                <option value="Painter">Painter</option>
+                <option value="Massage">Massage</option>
+                <option value="Carpenter">Carpainter</option>
+                <option value="Plumber">Plumber</option>
               </select>
             </div>
           <div class="form-group">
-              <select class="form-control" id="sel3">
-                <option>Painter</option>
-                <option>Massage</option>
-                <option>Carpainter</option>
-                <option>Plumber</option>
+              <select class="form-control" id="sel3" name="rating">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
               </select>
             </div>
 
@@ -229,7 +227,49 @@
 <!--  End of footer -->
 
 
+<script>
 
+var myNestedVals = {
+        'Ahmedabad': {
+            'Paldi': "Paldi",
+            'Narol': "Narol",
+            'Navrangpura': "Navrangpura",
+            'Bopal': "Bopal"
+        },
+        'Mumbai': {
+            'Worli': "Worli",
+            'Juhu': "Juhu",
+            'Lokhandwala': "Lokhandwala"
+        },
+        'Baroda': {
+            'AKlota': "AKlota",
+            'Kalali': "Kalali",
+            'Soma Talav': "Soma Talav"
+        }
+    }
+
+    function createOption(ddl, text, value) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.text = text;
+        ddl.options.add(opt);
+    }
+
+    function createOptions(optionsArray, ddl) {
+        for (i = 0; i < optionsArray.length; i++) {
+            createOption(ddl, optionsArray[i], optionsArray[i]);
+        }
+    }
+
+    function configureDDL2(ddl1, ddl2) {
+        ddl2.options.length = 0;
+        createOption(ddl2, "Select Area", "");
+        var ddl2keys = Object.keys(myNestedVals[ddl1.value]);
+        console.log(ddl2keys)
+        createOptions(ddl2keys, ddl2)
+    }
+
+</script>
 
     <!-- bootstrap -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
