@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+.heading {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mycard {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+}
+
+.mycard:hover {
+  transform: scale(1.05);
+}
+
+.mycard__image {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mycard__image img {
+  width: 100%;
+  border-radius: 4px;
+  filter: brightness(80%);
+}
+
+.mycard__content {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.mycard__heading {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.mycard__btn {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background: #2f4f4f;
+  cursor: pointer;
+  color: #eee;
+  font-size: 14px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.mycard__btn:focus,
+.mycard__btn:active {
+  outline: none;
+}
