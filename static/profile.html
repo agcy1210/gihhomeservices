@@ -32,6 +32,9 @@
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
           </ul>
           <div class="ml-auto">
               <a href="signup.php"><button class="mybtn">sign up</button></a>
@@ -40,7 +43,12 @@
         </div>
        
       </nav>
-
+      <div style="margin: 20px auto;display:none" id="book-success" class="container">
+          <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              Booking Done Successfully!
+            </div>
+      </div>
       <section class="main-content">
           <div class="container">
               <div class="row">
@@ -58,7 +66,7 @@
                         <h4>Booking</h4>
                         <input type="datetime-local" class="form-control datetime">
                         <br>
-                        <button class="mybtn book-now-btn">BOOK NOW</button>
+                        <button class="mybtn book-now-btn" style="margin-bottom: 20px;">BOOK NOW</button>
                     </div>
                   </div>
                   <div class="col-md-8 content">
@@ -97,6 +105,7 @@
           var date = datetime[0].value.substr(0,10);
           var time = datetime[0].value.substr(11,);
           console.log(date, time);
+          $("#book-success").show();
         });
       
       </script>
