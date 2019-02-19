@@ -1,0 +1,685 @@
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+* {
+    font-family: "Varela Round", sans-serif;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+a:hover{
+  text-decoration: none;
+}
+
+
+
+
+
+/*#########################################################
+##########################################################
+########################################################*/
+
+
+/*index page*/
+.mybtn{
+    border:none;
+    padding: 7px 20px;
+    border-radius: 30px;
+    margin-right: 5px;
+    background:rgb(66, 134, 244);
+    color:#fff;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    font-family: "Varela Round", sans-serif;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.mybtn:hover,
+.mybtn:active,
+.mybtn:focus{
+    outline: none;
+}
+
+.mybtn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+}
+
+.mybtn:action{
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+@media (max-width:998px){
+    .mybtn{
+        margin-top: 5px;
+    }
+}
+
+.li-items-icons {
+    margin-right: 10px;
+}
+
+/* .my-search{
+    background: rgba(0,0,0,0.2);
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    margin: 5px auto;
+    width:50vw;
+}
+
+.btn{
+    margin-top: 5px;
+    width:50vw;
+} */
+
+
+.search{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.2)),url(./img/3.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .search {
+        height: 70vh;
+    }
+}
+
+.s-info h3{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.s-info p{
+    text-align: center;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.my-search{
+    width: 40%;
+    margin: 10px auto;
+}
+
+.form-control{
+    outline: none !important;
+    box-shadow: none !important;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+ .bootstrap-select .form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    
+}
+
+.my-btn{
+    text-align: center;
+}
+.btn{
+    text-align: center;
+    background: white;
+    width:125px;
+    outline: none;
+    border: 3px solid rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: black;
+    
+}
+
+.my-btn:focus{
+    outline:none ;
+    box-shadow: none;
+}
+
+@media (max-width: 768px){
+    .my-search{
+        margin-top:5px;
+        width: 80%;
+    }
+}
+
+.grids-center{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.grid{
+    flex:1 0 calc(33% - 5px);
+    margin:0;
+    padding: 10px;
+}
+
+.grids article:first-of-type{
+
+    border-right: 1px solid #ccc;
+}
+
+.grids article:nth-of-type(3){
+    border-left: 1px solid #ccc;
+}
+
+.grids article:nth-of-type(4){
+    border-right: 1px solid #ccc;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.grids article:nth-of-type(6){
+    border-left: 1px solid #ccc;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.grids article:nth-of-type(5){
+    border-width: 100px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+} 
+
+.grids-center{
+    margin: 0 auto;
+}
+
+.grid{
+    text-align: center;
+}
+
+.grid a{
+    font-size: 35px;
+}
+
+.grid p{
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+@media screen and (min-width:776px){
+    .grid{
+        flex:1 0 calc(16.66% - 5px);
+    }
+    grids article:first-of-type{
+
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+    .grids article:nth-of-type(3){
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+    .grids article:nth-of-type(2){
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+    .grids article:nth-of-type(1){
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+
+
+}
+
+
+
+.mycard {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+  }
+  
+  .mycard:hover {
+    transform: scale(1.05);
+  }
+  
+  .mycard__image {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .mycard__image img {
+    width: 100%;
+    border-radius: 4px;
+    filter: brightness(80%);
+  }
+  
+  .mycard__content {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .mycard__heading {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .mycard__btn {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: #2f4f4f;
+    cursor: pointer;
+    color: #eee;
+    font-size: 14px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  .mycard__btn:focus,
+  .mycard__btn:active {
+    outline: none;
+  }
+
+.how-item {
+    display: flex;
+    margin: 50px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .how-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+}
+
+.sidebarimg i {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.viewall {
+    padding: 3px 10px;
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+    .viewall {
+        display: none;
+    }
+}
+
+/********footer*******/
+
+ul li {
+    list-style: none;
+}
+
+.list-unstyled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mylist {
+    text-align: center;
+}
+
+.myfooter{
+    width: 100%;
+    height:auto;
+    background-color: black;
+    color: white;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.2);
+    margin-top: 12px;
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .myfooter h3{
+      padding-top: 10px;
+      padding-bottom: 5px;
+  }
+  
+  .myfooter p{
+    text-align: center;
+  
+  }
+  
+
+/********end of footer*****/
+
+
+/*#############################################
+###############################################
+###############################################*/
+
+/* services*/
+
+
+
+
+
+.headings{
+ display: table-cell;
+ vertical-align: middle;
+ text-align: right;
+ padding: 25px 0 0 25px;
+
+}
+
+.headings h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.search_services{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.2)),url(./img/2.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .search_services {
+        height: 70vh;
+    }
+}
+
+.s-info h3{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.s-info p{
+    text-align: center;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.my-search_services{
+    width: 40%;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .my-search_services {
+        width: 80%;
+    }
+}
+
+.s-info_services h3{
+    margin-top: 60px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.s-info_services p{
+    text-align: center;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+
+
+.mycard_services {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+  }
+  
+  .mycard_services:hover {
+    transform: scale(1.05);
+  }
+  
+  .mycard_services__image {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .mycard_services__image img {
+    width: 100%;
+    border-radius: 4px;
+    filter: brightness(80%);
+  }
+  
+  .mycard_services__content {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .mycard_services__heading {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .mycard_services__btn {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: #2f4f4f;
+    cursor: pointer;
+    color: #eee;
+    font-size: 14px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  .mycard_services__btn:focus,
+  .mycard_services__btn:active {
+    outline: none;
+  }
+
+
+
+
+
+
+
+
+/*########################################
+##########################################
+##########################################*/
+
+/*filter page*/
+
+
+
+.search_filter{
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+
+/*.s-info_filter h3{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.s-info_filter p{
+    text-align: center;
+    margin-top: 0;
+    overflow: hidden;
+}*/
+
+.my-search_filter{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.my-search_filter .form-group { 
+    margin-right: 20px;
+    flex: 1;
+}
+
+.form-control{
+    outline: none !important;
+    box-shadow: none !important;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+ .bootstrap-select .form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    
+}
+
+
+.my-btn_filter{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.btn{
+    text-align: center;
+    background: white;
+    width:125px;
+    outline: none;
+    border: 3px solid rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: black;
+    
+}
+
+.my-btn_filter:focus{
+    outline:none ;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 776px){
+    .my-search_filter{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .my-search_filter .form-group {
+        width: 100%;
+    }
+}
+
+.margin-left {
+    margin-left: -40px;
+}
+/*  Profile Page CSS  */
+
+
+.main-content {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.profile-image {
+    width: 80%;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.profile-content {
+    margin: 20px auto;
+}
+
+.verified-btn {
+    background-color:#fff;
+    padding: 2px 20px;
+    font-size: 12px;
+    border: 1px solid #42f44b;
+    border-radius: 30px;
+    color:#42f44b;
+    font-family: "Varela Round", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.verified-btn:focus,
+.verified-btn:active {
+    outline: none;
+}
+
+.expertise-btn {
+    background-color:#fff;
+    padding: 2px 10px;
+    font-size: 12px;
+    border: 1px solid rgb(66, 134, 244);
+    border-radius: 30px;
+    color: rgb(66, 134, 244);
+    font-family: "Varela Round", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.expertise-btn:focus,
+.expertise-btn:active {
+    outline: none;
+}
+
+.book-now-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+}
+
+.profile-footer {
+    text-align: center;
+}
