@@ -101,6 +101,12 @@ a:hover{
     margin:0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .search {
+        height: 70vh;
+    }
+}
+
 .s-info h3{
     margin-top: 30px;
     text-align: center;
@@ -116,14 +122,8 @@ a:hover{
 }
 
 .my-search{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.form-group{
-    margin-right: 20px;
-    width:250px;
+    width: 40%;
+    margin: 10px auto;
 }
 
 .form-control{
@@ -158,20 +158,10 @@ a:hover{
     box-shadow: none;
 }
 
-@media (max-width:676px){
-    .search{
-        height: 55vh;
-        /* background: rgba(0,0,0,0.5); */
-        
-    }
+@media (max-width: 768px){
     .my-search{
-        display: block;
         margin-top:5px;
-    }
-
-    .form-group{
-        margin:5px auto;
-        width:250px;
+        width: 80%;
     }
 }
 
@@ -233,7 +223,6 @@ a:hover{
 @media screen and (min-width:776px){
     .grid{
         flex:1 0 calc(16.66% - 5px);
-        
     }
     grids article:first-of-type{
 
@@ -322,6 +311,15 @@ a:hover{
     margin: 50px auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .how-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+}
+
 .sidebarimg i {
     font-size: 40px;
     margin-right: 20px;
@@ -354,11 +352,6 @@ ul li {
 
 .mylist {
     text-align: center;
-}
-
-.my-list ul {
-    list-style-type: none;
-    text-decoration: none;
 }
 
 .myfooter{
@@ -423,6 +416,12 @@ ul li {
     margin:0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .search_services {
+        height: 70vh;
+    }
+}
+
 .s-info h3{
     margin-top: 30px;
     text-align: center;
@@ -438,9 +437,14 @@ ul li {
 }
 
 .my-search_services{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
+    width: 40%;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .my-search_services {
+        width: 80%;
+    }
 }
 
 .s-info_services h3{
@@ -530,13 +534,8 @@ ul li {
 
 
 .search_filter{
-    background-size: cover;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     height: auto;
-    display: flex;
-    flex-direction: column;
     margin:0 auto;
 }
 
@@ -560,9 +559,9 @@ ul li {
     margin-top: 20px;
 }
 
-.form-group{
+.my-search_filter .form-group { 
     margin-right: 20px;
-    width:250px;
+    flex: 1;
 }
 
 .form-control{
@@ -599,6 +598,11 @@ ul li {
     outline:none ;
     box-shadow: none;
 }
+
+.margin-left {
+    margin-left: -40px;
+}
+
 /*  Profile Page CSS  */
 
 
