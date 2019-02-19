@@ -583,8 +583,6 @@ ul li {
 }
 
 
-
-
 .my-btn_filter{
     text-align: center;
     margin-bottom: 15px;
@@ -604,4 +602,73 @@ ul li {
 .my-btn_filter:focus{
     outline:none ;
     box-shadow: none;
+}
+/*  Profile Page CSS  */
+
+
+.main-content {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.profile-image {
+    width: 80%;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.profile-content {
+    margin: 20px auto;
+}
+
+.verified-btn {
+    background-color:#fff;
+    padding: 2px 20px;
+    font-size: 12px;
+    border: 1px solid #42f44b;
+    border-radius: 30px;
+    color:#42f44b;
+    font-family: "Varela Round", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.verified-btn:focus,
+.verified-btn:active {
+    outline: none;
+}
+
+.expertise-btn {
+    background-color:#fff;
+    padding: 2px 10px;
+    font-size: 12px;
+    border: 1px solid rgb(66, 134, 244);
+    border-radius: 30px;
+    color: rgb(66, 134, 244);
+    font-family: "Varela Round", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.expertise-btn:focus,
+.expertise-btn:active {
+    outline: none;
+}
+
+.book-now-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+}
+
+.profile-footer {
+    text-align: center;
 }
