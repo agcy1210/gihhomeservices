@@ -1,3 +1,14 @@
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+* {
+	font-family: "Varela Round", sans-serif;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -10,22 +21,32 @@ a:hover{
 
 }
 
+.navbar{
+	display: flex;
+	height: 60px;
+
+}
+
 .icon{
   width: 40px;
   height: 35px;
 }
 
 .icon-font{
-  font-size:32px; 
+
+  font-size:25px; 
   text-shadow: 0 1px 8px rgba(0,0,0,0.2);
 }
 
+
+
 .navbar_ul {
   color: black;
+  display: flex;
+  justify-content: center;
 
 }
 .navbar_ul li{
-  margin:25px 15px 15px 15px;
   padding: 5px;
   width: 100%;
   display: inline;
@@ -35,20 +56,33 @@ a:hover{
 
 .box1 {
   width:100%;
-  height: 450px;
-  display: block;
+  height: 70vh;
+  display: flex;
   box-shadow: 0 3px 4px rgba(0,0,0,0.4);
   background-image: url("2.jpg");
-  background-size:100% 100%;
+  background-position: center;
   filter: brightness(85%);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
 .box1 h1{
-  padding: 75px;
+  
   font-size: 50px;
   color: white;
+  margin-bottom: 40px;
+
   text-shadow: 0 1px 8px rgba(0,0,0,0.2);
+}
+.box1 .my-form{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .headings{
@@ -56,25 +90,31 @@ a:hover{
  vertical-align: middle;
  text-align: right;
  padding: 25px 0 0 25px;
+
 }
 
 .headings h2{
   font-size: 24px;
   font-weight: 600;
   margin-left: 95px;
-  margin-bottom: -7px;
+  margin-bottom: 20px;
+}
+
+.form-control{
+	width:450px;
 }
 
 
-
 .mybutton {
+  margin-top: 10px;
   border: none;
-  padding: 10px 30px;
+  width:100px;
+  padding: 10px;
   border-radius: 20px;
   background-image: linear-gradient(to right,rgba(200,50,30,0.9),rgba(200,50,30,0.8));
   color: #fff;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -96,11 +136,7 @@ a:hover{
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-body {
-  font-family: "Varela Round", sans-serif;
-}
 
 .heading {
   margin-top: 10px;
@@ -174,6 +210,32 @@ body {
   margin-bottom: 0px;
 }
 
+.myfooter h3{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
 .myfooter p{
   text-align: center;
+
 }
+
+.list-unstyled {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mylist{
+	
+	text-align: center;
+}
+
+.mylist ul{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+
+
+
