@@ -180,10 +180,17 @@ a:hover{
 .grids article:first-of-type{
 
     border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
+
+.grids article:nth-of-type(2) {
+    border-top: 1px solid #ccc;
+}
+
 
 .grids article:nth-of-type(3){
     border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
 
 .grids article:nth-of-type(4){
@@ -605,8 +612,9 @@ ul li {
         display: flex;
         flex-direction:column;
         justify-content: center;
-        align-items: center;
-        margin-right: 27px;
+    }
+    .my-search_filter .form-group {
+        width: 100%;
     }
 }
 
@@ -682,4 +690,3 @@ ul li {
 .profile-footer {
     text-align: center;
 }
-`
