@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
 
     
 
@@ -57,37 +58,35 @@
 
     <div class="my-search_filter">
         <div class="form-group">
-            <select class="form-control" id="sel1">
-              <option>Ahmedabad</option>
-              <option>Surat</option>
-              <option>Vadodara</option>
-              <option>Nikol</option>
+            <select onchange="configureDDL2(this, document.getElementById('ddl2'));" class="form-control" id="ddl1">
+              <option value="">Select City</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Baroda">Baroda</option>
+              <option value="Mumbai">Mumbai</option>
             </select>
           </div>
 
         <div class="form-group">
-            <select class="form-control" id="sel2">
-              <option>Ahmedabad</option>
-              <option>Surat</option>
-              <option>Vadodara</option>
-              <option>Nikol</option>
+            <select class="form-control" id="ddl2">
+              <option value="">Select Area</option>
             </select>
           </div>
 
           <div class="form-group">
               <select class="form-control" id="sel3">
-                <option>Painter</option>
-                <option>Massage</option>
-                <option>Carpainter</option>
-                <option>Plumber</option>
+                <option value="Painter">Painter</option>
+                <option value="Massage">Massage</option>
+                <option value="Carpenter">Carpainter</option>
+                <option value="Plumber">Plumber</option>
               </select>
             </div>
           <div class="form-group">
-              <select class="form-control" id="sel3">
-                <option>Painter</option>
-                <option>Massage</option>
-                <option>Carpainter</option>
-                <option>Plumber</option>
+              <select class="form-control" id="sel3" name="rating">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
               </select>
             </div>
 
@@ -209,7 +208,7 @@
                 </p>
               </li>
   
-            </ul>	
+            </ul> 
       </div>
   
       <div class="col-md-4 mylist">
@@ -222,20 +221,63 @@
         </ul>
       </div>
       
-      </div>	
+      </div>  
     </div>
   </div>
 
 <!--  End of footer -->
 
 
+<script>
 
+var myNestedVals = {
+        'Ahmedabad': {
+            'Paldi': "Paldi",
+            'Narol': "Narol",
+            'Navrangpura': "Navrangpura",
+            'Bopal': "Bopal"
+        },
+        'Mumbai': {
+            'Worli': "Worli",
+            'Juhu': "Juhu",
+            'Lokhandwala': "Lokhandwala"
+        },
+        'Baroda': {
+            'AKlota': "AKlota",
+            'Kalali': "Kalali",
+            'Soma Talav': "Soma Talav"
+        }
+    }
+
+    function createOption(ddl, text, value) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.text = text;
+        ddl.options.add(opt);
+    }
+
+    function createOptions(optionsArray, ddl) {
+        for (i = 0; i < optionsArray.length; i++) {
+            createOption(ddl, optionsArray[i], optionsArray[i]);
+        }
+    }
+
+    function configureDDL2(ddl1, ddl2) {
+        ddl2.options.length = 0;
+        createOption(ddl2, "Select Area", "");
+        var ddl2keys = Object.keys(myNestedVals[ddl1.value]);
+        console.log(ddl2keys)
+        createOptions(ddl2keys, ddl2)
+    }
+
+</script>
 
     <!-- bootstrap -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
