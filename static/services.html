@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- css file -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+      .nav{
+        background-color: #fca800 !important;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
   </head>
   <body>
 
@@ -23,6 +29,35 @@
 
 <!-- navbar NEW -->
 
+
+    <nav class="nav">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">DoorStepz</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Sass</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Javascript</a></li>
+          <li><a href="#">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/office.jpg">
+          </div>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+  </ul>
 
 
 <!-- navbar OLD-->
@@ -59,16 +94,16 @@
     </div> 
 
     <div class="my-search_services">
-        <div class="form-group">
-            <select class="form-control" id="sel1">
+        <div class="input-field col s12">
+            <select id="sel1">
               <option>Ahmedabad</option>
               <option>Surat</option>
               <option>Vadodara</option>
               <option>Nikol</option>
             </select>
           </div>
-          <div class="form-group">
-              <select class="form-control" id="sel2">
+          <div class="input-field">
+              <select id="sel2">
                 <option>Painter</option>
                 <option>Massage</option>
                 <option>Carpainter</option>
@@ -78,7 +113,7 @@
     </div>
 
     <div class="my-btn">
-        <button type="button" class="mybtn" style="padding: 10px 30px;">search</button>
+        <button class="waves-effect btn">search</button>
     </div>
 
  </div>
@@ -604,12 +639,29 @@
  -->
 <!--  End of footer OLD-->
 <!-- bootstrap -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+
+
+
+  <script type="text/javascript">
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {
+        edge: "left"
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+
+  </script>
+
   </body>
 </html>

@@ -1,12 +1,12 @@
 
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 * {
-    font-family: "Varela Round", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a{
@@ -142,7 +142,7 @@ a:hover{
 .my-btn{
     text-align: center;
 }
-.btn{
+/*.btn{
     text-align: center;
     background: white;
     width:125px;
@@ -151,10 +151,10 @@ a:hover{
     border-radius: 10px;
     color: black;
     
-}
+}*/
 
 .my-btn:focus{
-    outline:none ;
+    outline:none;
     box-shadow: none;
 }
 
@@ -410,9 +410,13 @@ ul li {
   margin-bottom: 20px;
 }
 
+.select-dropdown {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+}
 
 .search_services{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.2)),url(./img/2.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.2)),url(./img/office.jpg);
     background-size: cover;
     width: 100%;
     background-position: center;
@@ -594,7 +598,7 @@ ul li {
     margin-bottom: 15px;
     margin-top: 5px;
 }
-.btn{
+/*.btn{
     text-align: center;
     background: white;
     width:125px;
@@ -604,7 +608,7 @@ ul li {
     color: black;
     
 }
-
+*/
 .my-btn_filter:focus{
     outline:none ;
     box-shadow: none;
