@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
-
+    <style type="text/css">
+      .nav{
+        background-color: #fca800 !important;
+   		 }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
     
 
     <link rel="stylesheet" href="style.css">
@@ -20,10 +29,45 @@
     <title>DoorStepz</title>
 </head>
 <body>  
-   
-  <!-- navbar -->
+ 
+	<!-- navbar NEW -->
+
+	<nav class="nav">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">DoorStepz</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Sass</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Javascript</a></li>
+          <li><a href="#">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/office.jpg">
+          </div>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+
+	<!-- navbar NEW ends -->
+
+
+
+  <!-- navbar OLD -->
     
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+  <!-- <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
       <a class="navbar-brand" href="#"><i class="fas fa-wrench"></i>  DoorStepz</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,8 +91,8 @@
       </div>
      
     </nav>
-
- <!-- navbar ends -->
+ -->
+ <!-- OLD navbar ends -->
 
 <div class="container">
   
@@ -57,8 +101,8 @@
  
 
     <div class="my-search_filter">
-        <div class="form-group">
-            <select onchange="configureDDL2(this, document.getElementById('ddl2'));" class="form-control" id="ddl1">
+        <div class="input-field col s3">
+            <select onchange="configureDDL2(this, document.getElementById('ddl2'));" id="ddl1">
               <option value="">Select City</option>
               <option value="Ahmedabad">Ahmedabad</option>
               <option value="Baroda">Baroda</option>
@@ -66,22 +110,22 @@
             </select>
           </div>
 
-        <div class="form-group">
-            <select class="form-control" id="ddl2">
+        <div class="input-field col s3">
+            <select id="ddl2">
               <option value="">Select Area</option>
             </select>
           </div>
 
-          <div class="form-group">
-              <select class="form-control" id="sel3">
+          <div class="input-field col s3">
+              <select id="sel3">
                 <option value="Painter">Painter</option>
                 <option value="Massage">Massage</option>
                 <option value="Carpenter">Carpainter</option>
                 <option value="Plumber">Plumber</option>
               </select>
             </div>
-          <div class="form-group">
-              <select class="form-control" id="sel3" name="rating">
+          <div class="input-field col s3">
+              <select id="sel3" name="rating">
                 <option value="5">5</option>
                 <option value="4">4</option>
                 <option value="3">3</option>
@@ -92,19 +136,198 @@
 
     </div>
 
-    <div class="my-btn_filter">
-        <button type="button" class="mybtn" style="padding: 10px 30px;">search</button>
+    
+    <div class="my-btn">
+        <button class="waves-effect btn">search</button>
     </div>
-<h3>Carpenters near you</h3>
+	<h4>Carpenters near you</h4>
  </div>
  <br>
   
 </div>
 
+		<!-- card NEW -->
 
-<!-- mycard -->
+<!-- CARD NEW MATERIALIZE -->
 
-<section>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Rohit Kumar<i class="material-icons right">more_vert</i></span>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star"></span>
+
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
+    </div>
+  </div>
+      
+    </div>
+
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+    
+  </div>
+
+
+<div class="row">
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+    
+  </div>
+
+
+<div class="row">
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+
+    <div class="col s12 m6 l4">
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+		<!-- mycard OLD -->
+
+<!-- <section>
 
     <div class="container">
           <div class="row">
@@ -181,13 +404,59 @@
         </div>
       </div>
     </div>
-</section>
-<!-- footer -->
+</section> -->
+
+<!-- footer NEW -->
+<footer class="page-footer" style="background-color: #1E1813;">
+          <div class="container">
+            <div class="row">
+              <div class="col l3 offset-l1 s12">
+                <h5 class="white-text">About Us</h5>
+                <p class="grey-text text-lighten-4">We provide a new and efficient system which is user friendly and user can find their service with just one click</p>
+              </div>
+
+              <div class="col l3 offset-l1 s12">
+              <h5 class="white-text">Connect with Us</h5>
+                <ul class="list-unstyled">
+                  <li>
+                      <a href="#" class="li-items-icons "><i class="fab fa-facebook-f" style="font-size: 35px;color: #3B5998;"></i></a>
+                      <a href="#" class="li-items-icons"><i class="fab fa-twitter" style="font-size: 35px;color: #1DA1F2;"></i></a>
+                      <a href="#" class="li-items-icons"><i class="fab fa-instagram" style="font-size: 35px;color: #fb3958;"></i></a>
+                      <a href="#" class="li-items-icons"><i class="fab fa-linkedin" style="font-size: 35px;color: #0077B5;"></i></a>
+                    </p>
+                  </li>
+      
+                </ul> 
+              </div>
+
+              <div class="col l3 offset-l1 s12">
+                <h5 class="white-text">Available at</h5>
+                  <ul >
+                      <li>Ahmedabad</li>
+                      <li>Mumbai</li>
+                      <li>Surat</li>
+                      <li>Bengluru</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 
 
-<!-- footer --> 
 
-<div class="myfooter">
+
+<!-- footer NEW ends -->
+
+
+<!-- footer OLD --> 
+
+<!-- <div class="myfooter">
     <div class="container">
     
     <div class="row">
@@ -223,7 +492,7 @@
       
       </div>  
     </div>
-  </div>
+  </div> -->
 
 <!--  End of footer -->
 
@@ -279,7 +548,23 @@ var myNestedVals = {
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {
+        edge: "left"
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+
+  </script>
+
+
 
 
 </body>
