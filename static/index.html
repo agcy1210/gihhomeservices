@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+     <!-- bootstrap css -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
-    
-
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="static/style.css"> -->
+    <!-- css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+      .nav{
+        background-color: #fca800 !important;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
     <title>DoorStepz</title>
 </head>
-<body>  
-   
-  <!-- navbar -->
+<body>
     
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-      <a class="navbar-brand" href="#"><i class="fas fa-wrench"></i>  DoorStepz</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
-          </li>
-        </ul>
-        <div class="ml-auto">
-            <a href="signup.php"><button class="mybtn">sign up</button></a> 
-            <a href="login.php"><button class="mybtn">Login</button></a>   
+    <nav class="nav">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo">DoorStepz</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Sass</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">Mobile</a></li>
+          </ul>
         </div>
-      </div>
-     
-    </nav>
-
- <!-- navbar -->
-
-
- 
- <div class="search">
+      </nav>
+  
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="img/office.jpg">
+            </div>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+          </div>
+        </li>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+  
+    <!-- <div class="search">
     <div class="s-info">
       <h3>We are here in your city </h3>
       <p style="color: #fff;">Made for you</p>
@@ -80,214 +84,250 @@
         <button type="button" class="mybtn" style="padding: 10px 30px;">search</button>
     </div>
 
- </div>
+ </div> -->
 
- 
+    <div class="search_services">
+        <div class="s-info_services">
+          <h3> Available Services </h3>
+          <p style="color: #fff;">At your doorstep</p>
+        </div> 
+    
+        <div class="my-search_services">
+            <div class="input-field col s12">
+                <select id="sel1">
+                  <option>Ahmedabad</option>
+                  <option>Surat</option>
+                  <option>Vadodara</option>
+                  <option>Nikol</option>
+                </select>
+              </div>
+              <div class="input-field">
+                  <select id="sel2">
+                    <option>Painter</option>
+                    <option>Massage</option>
+                    <option>Carpainter</option>
+                    <option>Plumber</option>
+                  </select>
+                </div>
+        </div>
+    
+        <div class="my-btn">
+            <button class="waves-effect btn">search</button>
+        </div>
+    
+     </div>
 
-<section class="howitworks">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 co-xs-12">
-        <div class="how-item">
-            <div class="sidebarimg">
-                <i class="fas fa-user-plus"></i>
+     <section class="howitworks">
+        <div class="container hw">
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <div class="how-item">
+                  <div class="sidebarimg">
+                      <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="content">
+                      <h3 class="h3work">Signup/Register</h3>
+                      <p>Signup and register on our portal</p>
+                    </div>
               </div>
-              <div class="content">
-                <h3>Signup/Register</h3>
-                <p>Follow some simple steps and get yourself registered to avail the luxury of booking services with ease</p>
-              </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 co-xs-12">
-        <div class="how-item">
-            <div class="sidebarimg">
-                <i class="fas fa-calendar-check"></i>
-              </div>
-              <div class="content">
-                <h3>Book an Appointment</h3>
-                <p>Book an appointment for the desired service and with the service provider of your choice</p>
-              </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 co-xs-12">
-        <div class="how-item">
-          <div class="sidebarimg">
-              <i class="fas fa-cogs"></i>
             </div>
-            <div class="content">
-              <h3>Delivery of Service</h3>
-              <p>Get the delivery of service ordered without the hassle of finding the best service provider</p>
+            <div class="col s12 m6 l4">
+              <div class="how-item">
+                  <div class="sidebarimg">
+                      <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="content">
+                      <h3 class="h3work">Book an Appointment</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempore sequi accusamus blanditiis quidem optio, adipisci id corporis</p>
+                    </div>
+              </div>
             </div>
+            <div class="col s12 m6 l4">
+              <div class="how-item">
+                <div class="sidebarimg">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="content">
+                    <h3 class="h3work">Get your service delivered</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste numquam perspiciatis quis dolorem, facilis, quam nam, eum expedita voluptatibus aliquam dolores error?</p>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-
-<!-- grid -->
-
-<section class="grids">
-    <div class="grids-center">
-      <article class="grid">
-        <a href="#">
-            <i class="fas fa-paint-roller" style="color: #9AE19D;"></i>
-        <p>Painter</p>
-        </a>
-      </article>
-      <article class="grid">
-          <a href="#">
-              <i class="fas fa-baby-carriage" style="color: #FFCAD4;"></i>
-          
-          <p>Baby-sitter</p>
-          </a>
-        </article>
-        <article class="grid">
+      <section class="grids">
+        <div class="grids-center">
+          <article class="grid">
             <a href="#">
-                <i class="fas fa-tools" style="color: #320D6D;"></i>
-            
-            <p>Plumber</p>
-            </a>
+                <i class="fas fa-paint-roller" style="color:#9AE19D"></i>
+            <p>painter</p>
+          </a>
           </article>
           <article class="grid">
               <a href="#">
-                  <i class="fas fa-cogs"  style="color:#BC2C1A;"></i>
-              
-              <p>Mechanic</p>
-              </a>
+                  <i class="fas fa-baby-carriage" style="color:#FFCAD4 "></i>
+              <p>Baby-setter</p>
+            </a>
             </article>
             <article class="grid">
                 <a href="#">
-                    <i class="fas fa-toolbox" style="color: #EEA243;"></i>
-                
-                <p>Carpenter</p>
-                </a>
+                    <i class="fas fa-user-md" style="color:#320D6D"></i>
+                <p>Doctor</p>
+              </a>
               </article>
               <article class="grid">
                   <a href="#">
-                      <i class="fas fa-lightbulb" style="color: #9CEC5B;"></i>
-                  
-                  <p>Electrician</p>
+                      <i class="fas fa-cogs" style="color:#BC2C1A"></i>
+                  <p>Mechnical</p>
                   </a>
                 </article>
+                <article class="grid">
+                    <a href="#">
+                        <i class="fas fa-bicycle" style="color:#EEA243"></i>
+                    <p>Delivery</p>
+                    </a>
+                  </article>
+                  <article class="grid">
+                      <a href="#">
+                          <i class="fab fa-android" style="color:#9CEC5B"></i>
+                      <p>Mobile-service</p>
+                      </a>
+                    </article>
+        </div>
+      </section>
+      <!--ENd of grid-->
+      <!-- CARD NEW MATERIALIZE -->
+
+
+<div class="container">
+    <div class="heading1">
+        <h5> Appliance Services <i class="fas fa-chevron-right" style="font-size: 20px;"></i></h5>
     </div>
-  </section>
-
-
-<!-- End of grid -->
-
-
-<!-- mycard -->
-
-<section>
-    <div class="text-center" style="margin: 20px 0;">
-        <h2>Trending Services</h2>
-    </div>
-    <a href="services.html"><span class="viewall" style="">View All <i class="fas fa-chevron-right"></i></span></a>
-    <div class="container">
-          <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="mycard">
-        <div class="mycard__image">
-          <img src="https://images.unsplash.com/photo-1541558712184-a9134dde1705?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Carpenter Image">
-        </div>
-        <div class="mycard__content">
-           <p class="mycard__heading">Carpenter Service</p>
-        </div>
-      </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="mycard">
-        <div class="mycard__image">
-          <img src="https://images.unsplash.com/photo-1541474490544-bf6ea60c3972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Painter Image">
-        </div>
-        <div class="mycard__content">
-           <p class="mycard__heading">Painter Service</p>
-        </div>
-      </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="mycard">
-        <div class="mycard__image">
-          <img src="https://images.unsplash.com/photo-1516147124632-081540e06d88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Plumbing Image">
-        </div>
-        <div class="mycard__content">
-           <p class="mycard__heading">Plumbing Service</p>
-        </div>
-      </div>
-        </div>
-      </div>
-    </div>
-</section>
-<!-- footer -->
-
-
-<!-- footer -->
-
-<div class="myfooter">
-    <div class="container">
-    
     <div class="row">
-      <div class="col-md-4">
-        <h3 style="text-align: center;">About Us</h3>
-        <p>We provide a new and efficient system which is user friendly and user can find their service with just one click</p>
+      <div class="col s12 m6 l4">
+      <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="./img/office.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+        
       </div>
   
-      <div class="col-md-4">
-      <h3 style="text-align: center;">Connect with us</h3>
-            <ul class="list-unstyled">
-              <li>
-                
-                  <a href="#" class="li-items-icons "><i class="fab fa-facebook-f" style="font-size: 35px;color: #3B5998;"></i></a>
-                  <a href="#" class="li-items-icons"><i class="fab fa-twitter" style="font-size: 35px;color: #1DA1F2;"></i></a>
-                  <a href="#" class="li-items-icons"><i class="fab fa-instagram" style="font-size: 35px;color: #fb3958;"></i></a>
-                  <a href="#" class="li-items-icons"><i class="fab fa-linkedin" style="font-size: 35px;color: #0077B5;"></i></a>
-                </p>
-              </li>
-  
-            </ul> 
+      <div class="col s12 m6 l4">
+      <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/office.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+        
       </div>
   
-      <div class="col-md-4 mylist">
-        <h3>Available at</h3>
-        <ul>
-          <li class="margin-left">Ahmedabad</li>
-          <li class="margin-left">Mumbai</li>
-          <li class="margin-left">Surat</li>
-          <li class="margin-left">Bengluru</li>
-        </ul>
+      <div class="col s12 m6 l4">
+      <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/office.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+        
       </div>
       
-      </div>  
     </div>
-  </div>
+    </div>
 
-<!--  End of footer -->
+      <!-- FOOTER NEW -->
+<footer class="page-footer" style="background-color: #1E1813;">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 offset-l1 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">We provide a new and efficient system which is user friendly and user can find their service with just one click</p>
+        </div>
 
-  <script>
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else {
-        alert("Geolocation is not supported in your browser");
-      }
-    }
+        <div class="col l3 offset-l1 s12">
+        <h5 class="white-text">Connect with Us</h5>
+          <ul class="list-unstyled">
+            <li>
+                <a href="#" class="li-items-icons "><i class="fab fa-facebook-f" style="font-size: 35px;color: #3B5998;"></i></a>
+                <a href="#" class="li-items-icons"><i class="fab fa-twitter" style="font-size: 35px;color: #1DA1F2;"></i></a>
+                <a href="#" class="li-items-icons"><i class="fab fa-instagram" style="font-size: 35px;color: #fb3958;"></i></a>
+                <a href="#" class="li-items-icons"><i class="fab fa-linkedin" style="font-size: 35px;color: #0077B5;"></i></a>
+              </p>
+            </li>
 
-    function showPosition(position) {
-      console.log(position.coords);
-    }
+          </ul> 
+        </div>
 
-    getLocation();
-  </script>
+        <div class="col l3 offset-l1 s12">
+          <h5 class="white-text">Available at</h5>
+            <ul >
+                <li>Ahmedabad</li>
+                <li>Mumbai</li>
+                <li>Surat</li>
+                <li>Bengluru</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+      <!-- script -->
 
 
 
-    <!-- bootstrap -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        
+      </script>
+      
+      
+      
+        <script type="text/javascript">
+          
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+              edge: "left"
+            });
+          });
+      
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+          });
+      
+        </script>
 </body>
 </html>
-

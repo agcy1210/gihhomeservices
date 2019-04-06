@@ -28,6 +28,25 @@ a:hover{
 
 
 /*index page*/
+
+.hw {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+.h3work{
+    font-size: 1.75rem;
+    orphans: 3;
+    widows: 3;
+    margin-top: 0;
+  
+    margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
 .mybtn{
     border:none;
     padding: 7px 20px;
