@@ -61,80 +61,48 @@
       <li><a href="mobile.html">Mobile</a></li>
   </ul>
 
-	<!-- navbar NEW ends -->
-
-
-
-  <!-- navbar OLD -->
-    
-  <!-- <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-      <a class="navbar-brand" href="#"><i class="fas fa-wrench"></i>  DoorStepz</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
-          </li>
-        </ul>
-        <div class="ml-auto">
-            <a href="signup.php"><button class="mybtn">sign up</button></a>
-            <a href="login.php"><button class="mybtn">Login</button></a>
-            </div>
-      </div>
-     
-    </nav>
- -->
- <!-- OLD navbar ends -->
 
 <div class="container">
   
 
 <div class="search_filter">
- 
-
-    <div class="my-search_filter">
-        <div class="input-field col s3">
-            <select onchange="configureDDL2(this, document.getElementById('ddl2'));" id="ddl1">
-              <option value="">Select City</option>
-              <option value="Ahmedabad">Ahmedabad</option>
-              <option value="Baroda">Baroda</option>
-              <option value="Mumbai">Mumbai</option>
-            </select>
-          </div>
-
-        <div class="input-field col s3">
-            <select id="ddl2">
-              <option value="">Select Area</option>
-            </select>
-          </div>
-
+    <h4 class="center-align">Apply Filters</h4>
+      <div class="row">
           <div class="input-field col s3">
-              <select id="sel3">
-                <option value="Painter">Painter</option>
-                <option value="Massage">Massage</option>
-                <option value="Carpenter">Carpainter</option>
-                <option value="Plumber">Plumber</option>
+              <select class="filters-dropdown" onchange="configureDDL2(this, document.getElementById('ddl2'));" id="ddl1">
+                <option value="">Select City</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Baroda">Baroda</option>
+                <option value="Mumbai">Mumbai</option>
               </select>
             </div>
+  
           <div class="input-field col s3">
-              <select id="sel3" name="rating">
-                <option value="5">5</option>
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-                <option value="1">1</option>
+              <select class="filters-dropdown" id="ddl2">
+                <option value="">Select Area</option>
               </select>
             </div>
-
-    </div>
+  
+            <div class="input-field col s3">
+                <select class="filters-dropdown" >
+                  <option value="">Select Services</option>
+                  <option value="Painter">Painter</option>
+                  <option value="Massage">Massage</option>
+                  <option value="Carpenter">Carpainter</option>
+                  <option value="Plumber">Plumber</option>
+                </select>
+              </div>
+            <div class="input-field col s3">
+                <select class="filters-dropdown" id="sel3" name="rating">
+                  <option value="">Select Rating</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+      </div>
 
     
     <div class="my-btn">
@@ -499,6 +467,7 @@
         <h5 class="white-text">About Us</h5>
         <p class="grey-text text-lighten-4">We provide a new and efficient system which is user friendly and user can find their service with just one click</p>
       </div>
+<<<<<<< HEAD
 
       <div class="col l3 offset-l1 s12">
       <h5 class="white-text">Connect with Us</h5>
@@ -512,6 +481,22 @@
           </li>
 
         </ul> 
+=======
+  
+      <div class="col-md-4">
+      <h3 style="text-align: center;">Connect with us</h3>
+            <ul class="list-inline">
+              <li>
+                
+                  <a href="#" class="li-items-icons "><i class="fab fa-facebook-f" style="font-size: 35px;color: #3B5998;"></i></a>
+                  <a href="#" class="li-items-icons"><i class="fab fa-twitter" style="font-size: 35px;color: #1DA1F2;"></i></a>
+                  <a href="#" class="li-items-icons"><i class="fab fa-instagram" style="font-size: 35px;color: #fb3958;"></i></a>
+                  <a href="#" class="li-items-icons"><i class="fab fa-linkedin" style="font-size: 35px;color: #0077B5;"></i></a>
+                </p>
+              </li>
+  
+            </ul> 
+>>>>>>> 83b50fb0fede87c085426ddb612fe4d84b0ce46d
       </div>
 
       <div class="col l3 offset-l1 s12">
@@ -558,20 +543,24 @@ var myNestedVals = {
     }
 
 
-    function createOption(ddl, text, value) {
+    function createOption(ddl, value) {
         var opt = document.createElement('option');
         opt.value = value;
-        opt.text = text;
+        opt.text = value;
+        console.log("Before adding option")
         ddl.options.add(opt);
+      console.log("After adding option")
     }
+
 
     function createOptions(optionsArray, ddl) {
         for (i = 0; i < optionsArray.length; i++) {
-            createOption(ddl, optionsArray[i], optionsArray[i]);
+            createOption(ddl, optionsArray[i]);
         }
     }
 
     function configureDDL2(ddl1, ddl2) {
+        console.log(ddl2);
         ddl2.options.length = 0;
         createOption(ddl2, "Select Area", "");
         var ddl2keys = Object.keys(myNestedVals[ddl1.value]);
