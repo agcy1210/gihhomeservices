@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-     <!-- bootstrap css -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
     <!--materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
@@ -22,23 +21,51 @@
       }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
     <title>DoorStepz</title>
 </head>
 <body>
-    
-    <nav class="nav">
-        <div class="nav-wrapper container">
-          <a href="#!" class="brand-logo">DoorStepz</a>
+    <!-- navbar starts -->
+    <div class="navbar-fixed">
+    <nav class="nav" >
+        <div class="nav-wrapper hw container ">
+          <a href="#!" class="brand-logo" style="margin-left: 10px;">DoorStepz</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+          <ul class="hide-on-med-and-down" style="margin-left: 200px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="urgent.html">Urgent Services</a></li>
+          </ul >
+
+
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Sass</a></li>
-            <li><a href="#">Components</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">Mobile</a></li>
+
+    
+        <li><div class="my-btn">
+            <button class="waves-effect btn" style="margin-right: 10px;margin-left: 7px;">SignUp</button>
+        </div></li>
+
+        <li><div class="my-btn" >
+            <button class="waves-effect btn" >Login</button>
+        </div>
+        </li>
+            
+            
+        </div>
           </ul>
         </div>
       </nav>
-  
+    </div>
+  <!-- main nav ends -->
+
+
+    <!-- mobile nav starts -->
       <ul class="sidenav" id="mobile-demo">
         <li>
           <div class="user-view">
@@ -49,42 +76,15 @@
             <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
           </div>
         </li>
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="urgent.html">Urgent Services</a></li>
     </ul>
+
+    <!-- mobile nav ends -->
   
-    <!-- <div class="search">
-    <div class="s-info">
-      <h3>We are here in your city </h3>
-      <p style="color: #fff;">Made for you</p>
-    </div> 
-
-    <div class="my-search">
-        <div class="form-group">
-            <select class="form-control" id="sel1">
-              <option>Ahmedabad</option>
-              <option>Surat</option>
-              <option>Vadodara</option>
-              <option>Nikol</option>
-            </select>
-          </div>
-          <div class="form-group">
-              <select class="form-control" id="sel2">
-                <option>Painter</option>
-                <option>Massage</option>
-                <option>Carpainter</option>
-                <option>Plumber</option>
-              </select>
-            </div>
-    </div>
-
-    <div class="my-btn">
-        <button type="button" class="mybtn" style="padding: 10px 30px;">search</button>
-    </div>
-
- </div> -->
+    
 
     <div class="search_services">
         <div class="s-info_services">
@@ -157,6 +157,47 @@
         </div>
       </section>
 
+<!-- first info div ends -->
+
+
+
+  <!-- carousel -->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+        
+  <!-- end of carousel -->
+
+<!-- grid starts -->
       <section class="grids">
         <div class="grids-center">
           <article class="grid">
@@ -198,6 +239,7 @@
         </div>
       </section>
       <!--ENd of grid-->
+
       <!-- CARD NEW MATERIALIZE -->
 
 
@@ -304,17 +346,13 @@
 
       <!-- script -->
 
+   
 
-
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        
-      </script>
       
       
       
         <script type="text/javascript">
+          // M.AutoInit();
           
           document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
@@ -327,7 +365,14 @@
             var elems = document.querySelectorAll('select');
             var instances = M.FormSelect.init(elems);
           });
-      
+
+          document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems, {indicators:true,interval:4000,height:450});
+          });
+
         </script>
+
+      
 </body>
 </html>

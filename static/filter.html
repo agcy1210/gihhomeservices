@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
     <!--materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
@@ -30,76 +28,68 @@
 </head>
 <body>  
  
-	<!-- navbar NEW -->
+    <!-- navbar starts -->
+    <div class="navbar-fixed">
+    <nav class="nav" >
+        <div class="nav-wrapper hw container ">
+          <a href="#!" class="brand-logo" style="margin-left: 10px;">DoorStepz</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-	<nav class="nav">
-      <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo">DoorStepz</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Sass</a></li>
-          <li><a href="#">Components</a></li>
-          <li><a href="#">Javascript</a></li>
-          <li><a href="#">Mobile</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <ul class="sidenav" id="mobile-demo">
-      <li>
-        <div class="user-view">
-          <div class="background">
-            <img src="img/office.jpg">
-          </div>
-          <a href="#name"><span class="white-text name">John Doe</span></a>
-          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div>
-      </li>
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">Javascript</a></li>
-      <li><a href="mobile.html">Mobile</a></li>
-  </ul>
-
-	<!-- navbar NEW ends -->
+          <ul class="hide-on-med-and-down" style="margin-left: 200px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="urgent.html">Urgent Services</a></li>
+          </ul >
 
 
+          <ul class="right hide-on-med-and-down">
 
-  <!-- navbar OLD -->
     
-  <!-- <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-      <a class="navbar-brand" href="#"><i class="fas fa-wrench"></i>  DoorStepz</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
-          </li>
-        </ul>
-        <div class="ml-auto">
-            <a href="signup.php"><button class="mybtn">sign up</button></a>
-            <a href="login.php"><button class="mybtn">Login</button></a>
+        <li><div class="my-btn">
+            <button class="waves-effect btn" style="margin-right: 10px;margin-left: 7px;">SignUp</button>
+        </div></li>
+
+        <li><div class="my-btn" >
+            <button class="waves-effect btn" >Login</button>
+        </div>
+        </li>
+            
+            
+        </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  <!-- main nav ends -->
+
+
+    <!-- mobile nav starts -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="img/office.jpg">
             </div>
-      </div>
-     
-    </nav>
- -->
- <!-- OLD navbar ends -->
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+          </div>
+        </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="urgent.html">Urgent Services</a></li>
+    </ul>
 
-<div class="container">
+    <!-- mobile nav ends -->
+
+
+
   
-
+<!-- serach filter -->
+<div class="container">
 <div class="search_filter">
  
-
     <div class="my-search_filter">
         <div class="input-field col s3">
             <select onchange="configureDDL2(this, document.getElementById('ddl2'));" id="ddl1">
@@ -159,8 +149,9 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Rohit Kumar<i class="material-icons right">more_vert</i></span>
+      <span class="card-title  grey-text text-darken-4">Rohit Kumar</span>
       <!-- <p><a href="#">This is a link</a></p> -->
+      <span class="activator"><i class="material-icons right">more_vert</i></span>
        <span class="fa fa-star checked"></span>
        <span class="fa fa-star checked"></span>
        <span class="fa fa-star checked"></span>
