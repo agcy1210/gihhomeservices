@@ -89,42 +89,45 @@
 <!-- serach filter -->
 <div class="container">
 <div class="search_filter">
- 
-    <div class="my-search_filter">
-        <div class="input-field col s3">
-            <select onchange="configureDDL2(this, document.getElementById('ddl2'));" id="ddl1">
-              <option value="">Select City</option>
-              <option value="Ahmedabad">Ahmedabad</option>
-              <option value="Baroda">Baroda</option>
-              <option value="Mumbai">Mumbai</option>
-            </select>
-          </div>
 
-        <div class="input-field col s3">
-            <select id="ddl2">
-              <option value="">Select Area</option>
-            </select>
-          </div>
+    <h4 class="center-align">Apply Filters</h4>
+      <div class="row">
 
           <div class="input-field col s3">
-              <select id="sel3">
-                <option value="Painter">Painter</option>
-                <option value="Massage">Massage</option>
-                <option value="Carpenter">Carpainter</option>
-                <option value="Plumber">Plumber</option>
+              <select class="filters-dropdown" onchange="configureDDL2(this, document.getElementById('ddl2'));" id="ddl1">
+                <option value="">Select City</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Baroda">Baroda</option>
+                <option value="Mumbai">Mumbai</option>
               </select>
             </div>
+  
           <div class="input-field col s3">
-              <select id="sel3" name="rating">
-                <option value="5">5</option>
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-                <option value="1">1</option>
+              <select class="filters-dropdown" id="ddl2">
+                <option value="">Select Area</option>
               </select>
             </div>
-
-    </div>
+  
+            <div class="input-field col s3">
+                <select class="filters-dropdown" >
+                  <option value="">Select Services</option>
+                  <option value="Painter">Painter</option>
+                  <option value="Massage">Massage</option>
+                  <option value="Carpenter">Carpainter</option>
+                  <option value="Plumber">Plumber</option>
+                </select>
+              </div>
+            <div class="input-field col s3">
+                <select class="filters-dropdown" id="sel3" name="rating">
+                  <option value="">Select Rating</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+      </div>
 
     
     <div class="my-btn">
@@ -144,23 +147,28 @@
 <div class="container">
   <div class="row">
     <div class="col s12 m6 l4">
+    
     <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="img/office.jpg">
     </div>
-    <div class="card-content">
-      <span class="card-title  grey-text text-darken-4">Rohit Kumar</span>
+    
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
       <!-- <p><a href="#">This is a link</a></p> -->
-      <span class="activator"><i class="material-icons right">more_vert</i></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star"></span>
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
 
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
       <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
@@ -173,12 +181,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -190,12 +208,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -211,12 +239,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -228,12 +266,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -245,12 +293,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -266,12 +324,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -283,12 +351,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -300,12 +378,22 @@
       <img class="activator" src="img/office.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <a href="profile.html"><span class="card-title grey-text text-darken-4">Rohit Kumar</span></a>
+     <a class="activator " style="cursor:pointer;  "> <i class="material-icons right ">more_vert</i></a>
+      <!-- <p><a href="#">This is a link</a></p> -->
+       <a href="profile.html">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       </a>
+
     </div>
+    
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title  grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+      <p>Has provided 100 services till date and highly rated by customers.</p>
     </div>
   </div>
       
@@ -316,149 +404,20 @@
 </div>
 
 
-		<!-- mycard OLD -->
-
-<!-- <section>
-
-    <div class="container">
-          <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="mycard">
-        <div class="mycard__image">
-          <img src="https://images.unsplash.com/photo-1541558712184-a9134dde1705?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Carpenter Image">
-        </div>
-        <div class="mycard__content">
-           <p class="mycard__heading">Carpenter Service</p>
-            <p>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star"></span>
-     </p>
-        </div>
-      </div>
-          </div>
-
-
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="mycard">
-        <div class="mycard__image">
-          <img src="https://images.unsplash.com/photo-1541558712184-a9134dde1705?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Carpenter Image">
-        </div>
-        <div class="mycard__content">
-           <p class="mycard__heading">Carpenter Service</p>
-            <p>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star"></span>
-     </p>
-        </div>
-      </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="mycard">
-        <div class="mycard__image">
-          <img src="https://images.unsplash.com/photo-1541474490544-bf6ea60c3972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Painter Image">
-        </div>
-        <div class="mycard__content">
-           <p class="mycard__heading">Painter Service</p>
-            <p>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star"></span>
-     </p>
-        </div>
-      </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="mycard">
-        <div class="mycard__image">
-          <img src="https://images.unsplash.com/photo-1516147124632-081540e06d88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Plumbing Image">
-        </div>
-        <div class="mycard__content">
-           <p class="mycard__heading">Plumbing Service</p>
-    <p>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star"></span>
-     </p>
-        </div>
-      </div>
-        </div>
-      </div>
-    </div>
-</section> -->
+		
 
 <!-- footer NEW -->
 <footer class="page-footer" style="background-color: #1E1813;">
-          <div class="container">
-            <div class="row">
-              <div class="col l3 offset-l1 s12">
-                <h5 class="white-text">About Us</h5>
-                <p class="grey-text text-lighten-4">We provide a new and efficient system which is user friendly and user can find their service with just one click</p>
-              </div>
-
-              <div class="col l3 offset-l1 s12">
-              <h5 class="white-text">Connect with Us</h5>
-                <ul class="list-unstyled">
-                  <li>
-                      <a href="#" class="li-items-icons "><i class="fab fa-facebook-f" style="font-size: 35px;color: #3B5998;"></i></a>
-                      <a href="#" class="li-items-icons"><i class="fab fa-twitter" style="font-size: 35px;color: #1DA1F2;"></i></a>
-                      <a href="#" class="li-items-icons"><i class="fab fa-instagram" style="font-size: 35px;color: #fb3958;"></i></a>
-                      <a href="#" class="li-items-icons"><i class="fab fa-linkedin" style="font-size: 35px;color: #0077B5;"></i></a>
-                    </p>
-                  </li>
-      
-                </ul> 
-              </div>
-
-              <div class="col l3 offset-l1 s12">
-                <h5 class="white-text">Available at</h5>
-                  <ul >
-                      <li>Ahmedabad</li>
-                      <li>Mumbai</li>
-                      <li>Surat</li>
-                      <li>Bengluru</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-
-
-
-
-<!-- footer NEW ends -->
-
-
-<!-- footer OLD --> 
-
-<!-- <div class="myfooter">
-    <div class="container">
-    
+  <div class="container hw">
     <div class="row">
-      <div class="col-md-4">
-        <h3 style="text-align: center;">About Us</h3>
-        <p>We provide a new and efficient system which is user friendly and user can find their service with just one click</p>
+      <div class="col l3 offset-l1 s12">
+        <h5 class="white-text">About Us</h5>
+        <p class="grey-text text-lighten-4">We provide a new and efficient system which is user friendly and user can find their service with just one click</p>
       </div>
   
       <div class="col-md-4">
       <h3 style="text-align: center;">Connect with us</h3>
-            <ul class="list-unstyled">
+            <ul class="list-inline">
               <li>
                 
                   <a href="#" class="li-items-icons "><i class="fab fa-facebook-f" style="font-size: 35px;color: #3B5998;"></i></a>
@@ -469,23 +428,27 @@
               </li>
   
             </ul> 
-      </div>
-  
-      <div class="col-md-4 mylist">
-        <h3>Available at</h3>
-        <ul >
-            <li class="margin-left">Ahmedabad</li>
-            <li class="margin-left">Mumbai</li>
-            <li class="margin-left">Surat</li>
-            <li class="margin-left">Bengluru</li>
-        </ul>
-      </div>
-      
-      </div>  
-    </div>
-  </div> -->
 
-<!--  End of footer -->
+      </div>
+
+      <div class="col l3 offset-l1 s12">
+        <h5 class="white-text">Available at</h5>
+          <ul >
+              <li>Ahmedabad</li>
+              <li>Mumbai</li>
+              <li>Surat</li>
+              <li>Bengluru</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container copy">
+    © 2019 Copyright Team DoorStepz
+   
+    </div>
+  </div>
+</footer>
 
 
 <script>
@@ -512,20 +475,24 @@ var myNestedVals = {
     }
 
 
-    function createOption(ddl, text, value) {
+    function createOption(ddl, value) {
         var opt = document.createElement('option');
         opt.value = value;
-        opt.text = text;
+        opt.text = value;
+        console.log("Before adding option")
         ddl.options.add(opt);
+      console.log("After adding option")
     }
+
 
     function createOptions(optionsArray, ddl) {
         for (i = 0; i < optionsArray.length; i++) {
-            createOption(ddl, optionsArray[i], optionsArray[i]);
+            createOption(ddl, optionsArray[i]);
         }
     }
 
     function configureDDL2(ddl1, ddl2) {
+        console.log(ddl2);
         ddl2.options.length = 0;
         createOption(ddl2, "Select Area", "");
         var ddl2keys = Object.keys(myNestedVals[ddl1.value]);
